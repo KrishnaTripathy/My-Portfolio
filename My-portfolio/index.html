@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/0e48d1f35b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- nav -->
+    <div id="header">
+        <div class="container">
+
+            <nav>
+                <img src="./personal-portfolio-img/images/LOGO-MYSELF.png" class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>Krishna</span><br>Tripathy</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./personal-portfolio-img/images/my-about-pic.png" alt="" style="height: 500px;">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a Frontend developer with 6 months of internship experience and recent Udemy coursework.
+                        Skilled in HTML, CSS, JavaScript, React, Redux, and Git, with industry experience in blogging,
+                        finance, e-commerce, and education. Previously interned at <a href="https://spontom.com/">Spontom & Co.</a> , focused on creating
+                        visually appealing and functional websites.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span style="color: #ff004f;">Web Development</span><br>HTML , CSS , JavaScript ,<br>
+                                React , Redux , Git ,<br> Tailwind css</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+
+                            <li><span style="color: #ff004f;">Web Developer</span><br><span>Jan 2024 - Jun
+                                    2024</span><br>Vyza Solutions Pvt Ltd -internship</li>
+                            <li><span style="color: #ff004f;">Frontend Developer</span><br><span>Feb 2024 - May
+                                    2024</span><br>Spontom & Co. -internship</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span style="color: #ff004f;">Master of Computer Applications
+                                    (MCA)</span><br><span>2021-2023</span><br>Computer Applications</li>
+                            <li><span style="color: #ff004f;">Bachelor of Science
+                                    (BSc)</span><br><span>2018-2021</span><br>Computer Science</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Services -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Responsive Web Design</h2>
+                    <p>I specialize in creating visually appealing and user-friendly websites that look great on all
+                        devices, whether it's a desktop, tablet, or smartphone. Ensuring a seamless user experience
+                        across all screen sizes is my priority.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Front-End Development</h2>
+                    <p>I develop interactive and dynamic web pages using HTML, CSS, and JavaScript frameworks like React
+                        Bringing designs to life and making them engaging and functional is what I do best.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>E-commerce Development</h2>
+                    <p>I create responsive and user-friendly online stores using HTML, CSS, and JavaScript. From simple
+                        product pages to full shopping cart systems, I build visually appealing and easy-to-navigate
+                        e-commerce websites that ensure a smooth shopping experience for your customers.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img class="portfolio-image" src="./personal-portfolio-img//images/crud.webp" alt=""
+                        style="width: 400px; height:465px;">
+                    <div class="layer">
+                        <h3>CRUD Operations</h3>
+                        <p>I develop web applications with full CRUD (Create, Read, Update, Delete) functionality using
+                            HTML, CSS, and JavaScript. These operations allow users to interact with data seamlessly,
+                            providing a user-friendly interface for managing and manipulating information effectively.
+                        </p>
+                        <a href="https://crud-operation-krishna.netlify.app/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="portfolio-image" src="./personal-portfolio-img//images/2048-games.avif" alt=""
+                        style="width: 400px; height:465px;">
+                    <div class="layer">
+                        <h3>2048 Game Development</h3>
+                        <p>
+                            I develop the 2048 game using HTML, CSS, and JavaScript. This addictive puzzle game features
+                            a sleek design and smooth animations, providing an engaging and interactive experience as
+                            players combine tiles to reach the coveted 2048 tile.</p>
+                        <a href="https://krishna-2048-games.netlify.app/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="portfolio-image" src="./personal-portfolio-img//images/tic-tac-.png" alt=""
+                        style="width: 400px; height:465px;">
+                    <div class="layer">
+                        <h3>Tic-Tac-Toe Game Development</h3>
+                        <p>
+                            I create interactive Tic-Tac-Toe games using HTML, CSS, and JavaScript. This classic game
+                            features a simple yet engaging design, allowing players to enjoy smooth gameplay with
+                            responsive updates and intuitive controls. Perfect for enhancing user interaction on your
+                            website.</p>
+                        <a href="https://krishna-tic-tac-toe-game.netlify.app/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i><a
+                            href="mailto:krishnatripathy2001@gmail.com">krishnatripathy2001@gmail.com</a></p>
+                    <p><i class="fa-solid fa-square-phone"></i><a href=tel:"91+6370269698">6370269698</a></p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="./personal-portfolio-img/images/krishna-resume-frontend.pdf" download
+                        class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © KT. Made with <i class="fa-solid fa-heart"></i> by Myself</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"> </script>
+</body>
+
+</html>
